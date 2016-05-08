@@ -1,0 +1,484 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/ 
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+/*
+  ========================================
+  Grid system
+  ========================================
+*/ 
+.col-1-3,
+.col-2-3,
+.col-1-2 {
+  padding: 0 1em; /*0 top-bottom / 16px L R*/
+  float: left;  /* var display:inline-block -> er (verri) lausn ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¾ar sem "white space" er virkt ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ milli html taga */
+ 
+}
+.col-1-3 {
+  width: 100%;  
+  border-radius: 10px 10px 10px 10px;
+  border: 1px;  
+  display: block; margin: 0px auto;
+  padding: 8px;
+  width: 400px;
+  float: center;
+  height: 250px;     
+ 
+  }
+}
+.col-2-3 {
+  width: 100%;
+}
+.col-1-2 {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/*
+  ========================================
+  Base
+  ========================================
+*/
+
+
+footer nav, footer h4 {
+  margin-top: 1em;
+}
+header nav {
+  margin-top: 1.3em;
+}
+/*
+  ========================================
+  Efnisyfirlit
+  ========================================
+*/
+label {
+  background: blue;
+  padding: .5em;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all .15s ease;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+input:checked + label {
+  font-size: 25px;
+  top: 0.6em;
+  display: block;
+}
+input:checked ~ .topmenu{
+  display: block;
+  height: 100%;
+}
+.topmenu {
+  background-color: #595959;
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  border-top: 0;
+  border-radius: 0;
+  width: inherit;
+  height: 0;
+}
+.centermenu {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  margin: 0 auto;
+}
+.topmenu li {
+  display: block;
+  position: relative;
+  list-style-type: none;
+  float: left;
+  width: 100%;
+  height: 2em;
+  top: 0;
+  border-right: 0;
+}
+.topmenu li:last-child{
+  border-right: 0px;
+  border-bottom: 0px;
+}
+.topmenu li a {
+  color: white;
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  height: 100%;
+}
+.topmenu a:hover {
+  background-color: transparent;
+    overflow: hidden;
+}
+.topmenu-dropdown {
+    background-color: blue;
+  }
+
+/*
+  ========================================
+  Box positions
+  ========================================
+*/
+
+.boxset{  
+    position: relative;
+  }
+.col-1-4{
+  width: 50%;
+  float: left;
+  }
+  img{
+    display:block;
+    width: 100%;
+    height: auto;
+  }
+/*
+  ========================================
+  Social buttons
+  ========================================
+*/
+.buttons {
+  position:  relative;
+  height: 3em;  
+}
+
+.buttons ul{
+  list-style-type: none;
+  width: 14em;
+  margin: 0 auto;
+  padding: 0;
+}
+.buttons li{
+  display: inline-block;
+}
+.buttons a{
+  display: block;
+  text-decoration: none;
+}
+.twitter {
+ position: relative;
+ height: 3em;
+ width: 3em;
+ background: transparent url('logos2.png') 0 0 no-repeat; 
+} 
+.facebook {
+ position: relative;
+ height: 3em;
+ width: 3em;
+ background: transparent url('logos2.png') 0 -3em no-repeat; 
+} 
+
+.pinterest {
+ position: relative;
+ height: 3em;
+ width: 3em;
+ background: transparent url('logos2.png') 0 -6em no-repeat; 
+} 
+.instagram {
+ position: relative;
+ height: 3em;
+ width: 3em;
+ background: transparent url('logos2.png') 0 -9em no-repeat; 
+}
+.buttons li:nth-child(4n+1)
+{
+  background: rgb(22,145,190);
+}
+
+.buttons li:nth-child(4n+2)
+{
+  background: rgb(22,107,162);
+}
+
+.buttons li:nth-child(4n+3)
+{
+  background: rgb(233,147,26);
+}
+
+.buttons li:nth-child(4n+4)
+{
+  background: rgb(70,70,70);
+}
+
+.buttons li:nth-child(4n+1) a:hover
+{
+  background: rgb(0,0,0);
+}
+
+.buttons li:nth-child(4n+2) a:hover
+{
+  background: rgb(0,0,0);
+}
+
+.buttons li:nth-child(4n+3) a:hover
+{
+  background: rgb(0,0,0);
+}
+
+.buttons li:nth-child(4n+4) a:hover
+{
+  background: rgb(0,0,0);
+}/*
+ANIMATION OG ÃƒÅ¾ANNIG
+*/
+.col-1-2{
+  transition: opacity 0.5s ease-in-out;
+}
+.col-1-2:hover{
+  opacity: 0.69;
+}
+.topmenu li:hover{
+background-color: #a6a6a6;
+transition: background-color 0.7s ease-in-out;
+
+}
+
+
+/*
+  ========================================
+  Social buttons
+  ========================================
+*/
+
+
+
+/************* Breakpoint 30em *************/
+
+@media screen and (min-width: 30em){
+  .col-1-2 {
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  }
+/************* Breakpoint 48em *************/
+@media screen and (min-width: 48em){
+  .col-1-3 {
+    width: 33.33%;
+  }
+  .col-2-3 {
+    width: 66.66%;
+  }
+  .col-1-2 {
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+    label {
+    display: none;
+  }
+
+  .topmenu {
+    background-color: #595959;
+    padding-top: 5px;
+    width: 60em;
+    position: relative;
+    height: 2em;
+    margin: 0;
+    margin-bottom: 1em;
+    
+  }
+  .centermenu {
+
+    margin: 0 auto;
+  }
+  .topmenu li {
+    display: inline-block;
+    border-right: 1px solid gray;
+    position: relative;
+    list-style-type: none;
+    float: left;
+    width: auto;
+  }
+  .topmenu li:last-child{
+    border-right: 0px;
+  }
+  .topmenu li a {
+    color: #fff;
+    text-decoration: none;
+    
+    padding-left: 1em;
+    padding-right: 1em;
+
+  }
+  .topmenu a:hover { 
+      overflow: hidden  
+  }  
+
+
+  }
+/************* Breakpoint 60em *************/
+@media screen and (min-width: 60em) {
+body{
+    max-width: 60em;
+    margin: 0 auto;
+  }  
+  .boxset{
+
+    position: relative;
+  }
+  .mynd{
+    position: relative;
+    border: solid 1px;
+    height:10em;
+    width: 10em;
+    overflow: hidden;
+  }
+  .mynd:hover {
+
+    z-index: 40000;
+  
+  }
+  /*
+  .mynd1{
+    left: 1em;
+    top: 10px;
+  }
+  .mynd2{
+    bottom: 0;
+    left:7em;
+    z-index: 2;
+  }
+  .mynd3{
+    left: 16em;
+    top: 10px;
+    z-index: 3
+  }
+  .mynd4{
+    left: 24em;
+    bottom: 0;
+    z-index: 2
+  }
+  */
+  .buttons {
+    position:  fixed;
+    top: 2em;
+    right: 0;
+    height: 12em;   
+    animation: mymove 2s;
+    animation-iteration-count: 1; 
+  }
+
+  .buttons ul{
+    list-style-type: none;
+    width: 3em;
+    margin: 0;
+    padding: 0;
+
+  }
+  @keyframes mymove {
+    from {top:-200px;}
+    to {top:31px;}
+  }
+
+}
+
+body
+{
+background-image: url("background4.jpg");
+background-repeat: no-repeat;
+background-size: 1920px 1920px;
+font-family: 'Oswald', sans-serif;
+}
+h1,h4
+{
+  color: white;
+}
+p
+{
+  color: white;
+}
+a
+{
+  color: white;
+}
+footer
+{
+float: left;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #565657;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #565657;
+}
+.div3{
+  border-radius: 10px 10px 10px 10px;
+  border: 1px;
+  height: 765px;
+  display: block; margin: 0px auto;
+  padding: 8px;
+  width: 400px;
+  float: right;
+  color: red;
+  background-color: black;
+ 
+  }
