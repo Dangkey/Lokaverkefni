@@ -405,7 +405,7 @@ body
 {
 background-image: url("background4.jpg");
 background-repeat: no-repeat;
-background-size: 1920px 1920px;
+background-size: 100% 100%;
 font-family: 'Oswald', sans-serif;
 }
 h1,h4
